@@ -11,6 +11,7 @@
     <name>SpringAIAlibaba-Maven父工程POM配置</name>
     <modules>
         <module>SAA-01-HelloWorld</module>
+        <module>SAA-02-Ollama</module>
     </modules>
 
     <properties>
