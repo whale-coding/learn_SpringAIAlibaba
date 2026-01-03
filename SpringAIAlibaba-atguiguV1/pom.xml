@@ -16,6 +16,7 @@
         <module>SAA-04-StreamingOutput</module>
         <module>SAA-05-Prompt</module>
         <module>SAA-06-PromptTemplate</module>
+        <module>SAA-07-StructuredOutput</module>
     </modules>
 
     <properties>
