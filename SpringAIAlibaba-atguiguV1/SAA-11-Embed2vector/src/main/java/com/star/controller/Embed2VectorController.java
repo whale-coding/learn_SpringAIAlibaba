@@ -37,7 +37,7 @@ public class Embed2VectorController {
      */
     // http://localhost:8080/text2embed?msg=射雕英雄传
     @GetMapping("/text2embed")
-    public EmbeddingResponse text2Embed(String msg){
+    public EmbeddingResponse text2Embed(@RequestParam(name = "msg") String msg){
         // 文本向量化
         // EmbeddingResponse embeddingResponse = embeddingModel.call(new EmbeddingRequest(List.of(msg), null));
         EmbeddingResponse embeddingResponse = embeddingModel.call(new EmbeddingRequest(List.of(msg),
