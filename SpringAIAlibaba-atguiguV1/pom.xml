@@ -26,6 +26,7 @@
         <module>SAA-14-LocalMcpServer</module>
         <module>SAA-15-LocalMcpClient</module>
         <module>SAA-16-ClientCallBaiduMcpServer</module>
+        <module>SAA-17-BailianRAG</module>
     </modules>
 
     <properties>
