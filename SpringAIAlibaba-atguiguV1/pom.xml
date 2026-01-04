@@ -27,6 +27,7 @@
         <module>SAA-15-LocalMcpClient</module>
         <module>SAA-16-ClientCallBaiduMcpServer</module>
         <module>SAA-17-BailianRAG</module>
+        <module>SAA-18-TodayMenu</module>
     </modules>
 
     <properties>

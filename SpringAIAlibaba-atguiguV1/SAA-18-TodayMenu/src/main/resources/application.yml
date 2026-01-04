@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    encoding:  # 大模型对话中文乱码 UTF8编码出来
+      enabled: true
+      force: true
+      charset: UTF-8
+
+spring:
+  application:
+    name: SAA-17-BailianRAG
+  ai:
+    dashscope:  # SpringAIAlibaba Config
+      api-key: ${ALI_API_KEY} # 从环境变量读取阿里云API Key（启动时需要在 idea中配置环境变量ALI_API_KEY=xxx）
+      agent:
+        options:
+          app-id: b02c8eee39494306a347d8ebec1988c4  # 百炼工作流应用 ID
