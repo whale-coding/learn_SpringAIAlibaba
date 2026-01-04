@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  servlet:
+    encoding:  # 大模型对话中文乱码 UTF8编码出来
+      enabled: true
+      force: true
+      charset: UTF-8
+
+spring:
+  application:
+    name: SAA-14-LocalMcpServer
+  ai:
+    mcp:  # mcp-server Config
+      server:
+        type: async
+        name: customer-define-mcp-server
+        version: 1.0.0
+

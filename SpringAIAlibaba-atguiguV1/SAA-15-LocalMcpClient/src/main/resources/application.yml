@@ -1,0 +1,27 @@
+server:
+  port: 8081
+  servlet:
+    encoding:  # 大模型对话中文乱码 UTF8编码出来
+      enabled: true
+      force: true
+      charset: UTF-8
+
+spring:
+  application:
+    name: SAA-15-LocalMcpClient
+  ai:
+    dashscope: # SpringAIAlibaba Config
+      api-key: ${ALI_API_KEY} # 从环境变量读取阿里云API Key（启动时需要在 idea中配置环境变量ALI_API_KEY=xxx）
+
+    mcp:  # mcp-client Config
+      client:
+        type: async
+        request-timeout: 60s
+        toolcallback:
+          enabled: true  # 启用 toolcallback 功能
+        sse:
+          connections:
+            mcp-server1:
+              url: http://localhost:8080  # 指向 mcp-server 服务地址
+
+
