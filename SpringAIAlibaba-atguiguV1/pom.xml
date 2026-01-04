@@ -20,6 +20,7 @@
         <module>SAA-08-Persistent</module>
         <module>SAA-09-Text2image</module>
         <module>SAA-10-Text2voice</module>
+        <module>SAA-11-Embed2vector</module>
     </modules>
 
     <properties>
